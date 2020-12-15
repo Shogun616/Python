@@ -1,6 +1,3 @@
-
-
-
 def json_encode( data ):
     if isinstance( data, bool ):
         if data:
@@ -18,4 +15,3 @@ def json_encode( data ):
     else:
         # All other types do not  need to be implemented - it is OK that they raise an error
         raise TypeError( "%s is not JSON serializable" % repr( data ) )
-
