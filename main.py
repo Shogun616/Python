@@ -1,7 +1,6 @@
 import unittest
 from myjson import json_encode
 
-
 class TestJsonEncode(unittest.TestCase):
     def test01_boolean_true( self ):
         self.assertEqual( json_encode( True ), "true" )
@@ -56,8 +55,5 @@ class TestJsonEncode(unittest.TestCase):
         self.assertEqual( json_encode( complex_data ),
                           '{"name":"Advanced Python Training","date":"October 13, 2012","completed":false,"instructor":{"name":"Anand Chitipothu","website":"http://anandology.com/"},"participants":[{"name":"Participant 1","email":"email1@example.com"},{"name":"Participant 2","email":"email2@example.com"}]}' )
 
-
-
 if __name__ == '__main__':
     unittest.main(verbosity=2)
-
